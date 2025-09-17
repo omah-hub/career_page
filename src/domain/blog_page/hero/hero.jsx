@@ -1,7 +1,7 @@
 import React from "react";
-import './hero_page.css'
+import './hero.css'
 
-class Blog extends React.Component {
+class Hero extends React.Component {
   render() {
     return (
        <main className="main">
@@ -19,4 +19,4 @@ class Blog extends React.Component {
   }
 }
 
-export default Blog;
+export default Hero;
