@@ -1,0 +1,118 @@
+.profile-container {
+    align-items: center;
+    text-align: center;
+    padding-bottom: 3px;
+}
+.profile-content {
+    display: flex;
+    gap: 1rem;
+    max-width:800px;
+    margin: 0 auto;
+    background:fdfdfd;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.6);
+    width: 688px;
+    height: 220px;
+   
+}
+
+
+.profile-stack {
+    position: relative;
+    width: 160px;
+    height: 160px;
+    box-sizing: border-box;
+}
+
+.profile-stack div {
+    border-right: 0;
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 180px;
+    height: 220px;
+    border-radius: 20px;
+    /* box-shadow: 0 2px 6px rgba(0,0,0,0.6); */
+    
+}
+.stack-layer-3 {
+    background: var(--Pry-Tint-04, #ECF2CF);
+    z-index: 1;
+    transform: translateX(-30px);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+.stack-layer-2 {
+ background: var(--Pry-Tint-04, #ECF2CF);  
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);  
+  z-index: 2;
+  transform: translateX(-15px);
+}
+
+/* front layer: contains the image centered */
+.stack-layer-1 {
+  background: var(--Pry-Tint-04, #ECF2CF);  
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);    
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.stack-layer-1 img {
+  width: 110px;   /* image size inside the square */
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  border: 4px solid rgba(255,255,255,0.9); 
+  z-index: 5;
+  box-shadow: 0 4px 10px  rgba(0,0,0,0.08);
+}
+
+.quote {
+  
+    text-align: center;
+    width: 435px;
+    flex-shrink: 0;
+    align-self: stretch;
+    height: 220px;
+    
+}
+
+
+.quote p {
+    color: var(--Type-Pry-text, #302C29);
+
+/* Big Body */
+font-family: "Nunito Sans";
+font-size: 17px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 141.176% */
+letter-spacing: 0.17px;
+
+}
+.profile-image h4 {
+margin-bottom: -3px;
+color: var(--Type-Pry-text, #302C29);
+/* Subheading */
+font-family: "Nunito Sans";
+font-size: 17px;
+font-style: normal;
+font-weight: 700;
+line-height: 20px; /* 117.647% */
+letter-spacing: 0.17px;
+}
+
+.profile-image span {
+   color: var(--Type-Pry-text, #302C29);
+
+/* Caption 01 */
+font-family: "Nunito Sans";
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 16px; /* 133.333% */
+letter-spacing: 0.24px;
+}

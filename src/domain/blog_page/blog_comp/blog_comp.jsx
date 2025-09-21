@@ -2,6 +2,9 @@ import React from "react";
 import Navbar from "../../../general/navbar/navbar";
 import Hero from "../hero/hero";
 import JoinUs from "../join_us/join_us";
+import OurValues from "../our_values/our_values";
+import OurCulture from "../our_culture/our_culture";
+import Humans from "../humans/humans";
 import './blog_comp.css'
 
 class BlogComp extends React.Component {
@@ -16,7 +19,12 @@ class BlogComp extends React.Component {
                 </div>
             </div>
 
-            <JoinUs />
+           <div className="other-component">
+                <JoinUs />
+                <OurValues />
+                <OurCulture />
+                <Humans />
+           </div>
             </div>
           
         )

@@ -1,22 +1,45 @@
-.join-us-title {
-    color: var(--Type-Pry-text, #302C29);
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 28px; /* 116.667% */
-    align-items: center;
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+.join-us {
+    background: var(--Bg-Light-Mode-Background, #FCFBFA);
+    padding: 56px 24px; /* Use smaller side padding for mobile */
+}
+
+.join-us .container {
+    max-width: 900px;
+    width: 100%;
+    margin: 0 auto;
     text-align: center;
 }
+
+.join-us-title {
+    font-size: 2rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    text-wrap: balance;
+}
+
 .join-us-text {
-    color: var(--Type-Sec-text, #7D756C);
+    max-width: 814px;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 1rem;
+    line-height: 1.5;
     text-align: center;
-    font-family: "Nunito Sans";
-    font-size: 17px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px; /* 141.176% */
-    letter-spacing: 0.17px;
-    align-items: center;
-    width: 814px;
-    margin: 0 auto; 
+}
+
+/* Responsive adjustments for small screens */
+@media (max-width: 768px) {
+    .join-us {
+        padding: 32px 8px;
+    }
+    .join-us-title {
+        font-size: 1.3rem;
+    }
+    .join-us-text {
+        max-width: 100%;
+        font-size: 0.95rem;
+    }
 }
