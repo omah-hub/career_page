@@ -5,6 +5,7 @@ import JoinUs from "../join_us/join_us";
 import OurValues from "../our_values/our_values";
 import OurCulture from "../our_culture/our_culture";
 import Humans from "../humans/humans";
+import OpenRoles from "../open-roles/open-roles";
 import './blog_comp.css'
 
 class BlogComp extends React.Component {
@@ -24,6 +25,7 @@ class BlogComp extends React.Component {
                 <OurValues />
                 <OurCulture />
                 <Humans />
+                <OpenRoles />
            </div>
             </div>
           

@@ -1,4 +1,8 @@
 import React from "react";
+import { FiArrowRight } from "react-icons/fi";
+import { FiArrowLeft } from "react-icons/fi";
+
+
 import "./humans.css";
 import profile from "../../../assets/images/Daniel.png";
 
@@ -31,6 +35,10 @@ class Humans extends React.Component {
                                   by purpose and powered by creativity.
                             </p>
                         </div>
+                    </div>
+                    <div className="navigation-arrows">
+                        <FiArrowLeft  className="arrow-left"/>
+                        <FiArrowRight className="arrow-right"/>
                     </div>
                 </div>
             </section>

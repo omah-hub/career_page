@@ -1,0 +1,127 @@
+.filter-container {
+    display: flex;
+    border: 1px solid #ddd;
+    justify-content: center;
+    border-radius: 100px;
+    margin: 0 20%;
+    align-items: center;
+    padding: 10px 0;
+    gap: 40px;
+    
+}
+.filter-bar {
+  display: flex;
+  gap: 1rem;
+  text-wrap: nowrap;
+}
+
+.filter-item {
+  position: relative;
+  min-width: 140px;
+  flex: 1;
+}
+
+.filter-button {
+    width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 6px;
+  border-radius: 12px;
+  appearance: none;
+  background: #fff;
+  border: 1px solid var(--borders-dividers-border, #DAD6D2);
+  border-radius: 6px;
+  padding: 10px 6px;
+  cursor: pointer;
+  font-size: 14px;
+  
+}
+.filter-button span {
+    color: var(--Type-Caption-color, #A69C92);
+/* Body */
+font-family: "Nunito Sans";
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 142.857% */
+letter-spacing: 0.14px;
+}
+
+.filter-button:hover {
+  /* background: #e0e0e0; */
+}
+
+.dropdown {
+  position: absolute;
+  top: 110%;
+  left: 0;
+  min-width: 140px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  padding: 10px;
+  z-index: 10;
+  flex: 1;
+  width: 100%;
+
+}
+
+.dropdown-icon {
+    color: #7D756C;
+}
+.dropdown-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  color: var(--Type-Disabled-color, #BAAD9F);
+  border-bottom: 1px solid #E0E0E0;
+
+/* Body */
+font-family: "Nunito Sans";
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 142.857% */
+letter-spacing: 0.14px;
+}
+
+.dropdown-header span {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #A69C92;
+}
+
+.dropdown ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown li {
+  padding: 6px 8px;
+  cursor: pointer;
+  border-radius: 4px;
+  color: #000;
+  text-align: left;
+
+/* Body */
+font-family: "Nunito Sans";
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 20px; /* 142.857% */
+letter-spacing: 0.14px;
+}
+
+.dropdown li:hover {
+  background: #f5f5f5;
+}
+
