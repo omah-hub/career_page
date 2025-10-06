@@ -6,7 +6,9 @@ import OurValues from "../our_values/our_values";
 import OurCulture from "../our_culture/our_culture";
 import Humans from "../humans/humans";
 import OpenRoles from "../open-roles/open-roles";
+import Form from "../talent_pool/talent_pool";
 import './blog_comp.css'
+import Footer from "../../../general/footer/footer";
 
 class BlogComp extends React.Component {
     render() {
@@ -26,6 +28,8 @@ class BlogComp extends React.Component {
                 <OurCulture />
                 <Humans />
                 <OpenRoles />
+                <Form />
+                <Footer/>
            </div>
             </div>
           

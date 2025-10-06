@@ -30,7 +30,7 @@ class Navbar extends React.Component {
       <header className="header">
         <div className="container">
           <div className="nav-brand">
-            <img src={logo} alt="Company Logo" style={{ height: '40px' }} />
+            <img src={logo} alt="Company Logo" />
           </div>
 
           <nav className={`nav ${isMobileMenuOpen ? "nav-open" : ""}`}>
