@@ -2,7 +2,7 @@ import React from "react";
 import FilterBar from "./filter/filter";
 import JobCard from "./job-card/job-card";
 
-import "./open-roles.css"
+import "./open_roles.css"
 
 
 class OpenRoles extends React.Component {

@@ -56,14 +56,14 @@
 }
 .form-group-upload {
   display: flex;
-  flex-direction: column;  /* stack items vertically */
-  align-items: center;     /* center horizontally */
-  justify-content: center; /* center vertically */
-  text-align: center;      /* center text */
-  gap: 10px;               /* spacing between items */
-  border: 2px dashed #ccc; /* optional: "upload box" look */
+  flex-direction: column;  
+  align-items: center;     
+  justify-content: center; 
+  text-align: center;      
+  gap: 10px;             
+  border: 2px dashed #ccc; 
   padding: 20px;
-  height: 200px;           /* set a height if you want vertical centering */
+  height: 200px;           
 }
 .form-group-upload .icon {
 height: 24px;
@@ -187,4 +187,16 @@ padding: 42px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media(max-width: 1000px){
+  .talent-content {
+    display: grid;
+    height:100%;
+    padding: 0;
+    width: 100%;
+  }
+  .talent-content >div {
+  flex: 0;
+}
+.talent-container {}
 }

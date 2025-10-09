@@ -1,6 +1,6 @@
 import MainLayout from "../layout/main_layout";
 import BlogComp from "../domain/blog_page/blog_comp/blog_comp";
-import JobDetails from "../domain/blog_page/job-details/job-details";
+import JobDetails from "../domain/blog_page/job_details/job_details";
 
 
 const routes = [

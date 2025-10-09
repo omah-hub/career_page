@@ -1,15 +1,15 @@
 import React from "react";
 import CultureCard from "./card_component/card_component";
 import './our_culture.css';
-import Innovation from "../../../assets/images/innovation-icon.png"
-import Growth from "../../../assets/images/growth-icon.png";
-import Customer from "../../../assets/images/customer-centric-icon.png"
+import Innovation from "../../../assets/images/innovation-icon.svg"
+import Growth from "../../../assets/images/growth-icon.svg";
+import Customer from "../../../assets/images/customer-centric-icon.svg"
 
 class OurCulture extends React.Component {
     render() {
         return(
             <section className="our-culture">
-                <div className="container">
+                <div >
                     <h1 className="our-culture-title">Our Culture</h1>
                     <p className="our-culture-text">Fostering a culture of innovation</p>
                 </div>

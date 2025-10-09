@@ -1,44 +1,39 @@
 .our-culture {
-    padding-top: 56px;
-    background-color: var(--Bg-Light-Mode-Background, #FCFBFA);
+  
+  padding: 56px 90px 20px;
+  background-color:  #FCFBFA;
 }
 .our-culture-title {
-    color: var(--Type-Pry-text, #302C29);
-
-/* Header 1 */
-font-family: "Nunito Sans";
-font-size: 24px;
-font-style: normal;
-font-weight: 700;
-line-height: 28px; /* 116.667% */
+  color:  #302C29;
+  font-family: "Nunito Sans";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px; 
 }
 .our-culture-text {
-color: var(--Type-Sec-text, #7D756C);
-
-/* Body */
-font-family: "Nunito Sans";
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: 20px; /* 142.857% */
-letter-spacing: 0.14px;
+  color: #7D756C;
+  font-family: "Nunito Sans";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; 
+  letter-spacing: 0.14px;
+  margin-bottom: 50px;
 }
 
 
 
 .our-culture-content {
-    display: flex;
-    gap: 2rem; /* space between cards */
-    padding: 24px 33px 37px 24px;
-    /* align-items: stretch; */
-    /* height: 20px; */
+  display: flex;
+  gap: 20px;
+  
 }
 @media (max-width: 1024px) {
   .our-culture-content {
     display: grid;
     grid-template-columns: 1fr;
-    /* gap: 1.5rem; */
-    padding: 16px;
+    /* padding: 16px; */
     justify-items: center;
   }
   .container {
@@ -46,4 +41,9 @@ letter-spacing: 0.14px;
     text-align: center;
   }
   
+}
+@media (max-width: 1024px) {
+  .our-culture{
+    padding: 56px 30px 30px;
+  }
 }

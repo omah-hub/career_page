@@ -10,10 +10,10 @@ import profile from "../../../assets/images/Daniel.png";
 class Humans extends React.Component {
     render() {
         return(
-            <section>
+            <section className="profile-section">
                 <div className="profile-container">
                     <h2>Humans at Buypower</h2>
-                    <p>What they are saying</p>
+                    <p className="subheading">What they are saying</p>
                     <div className="profile-content">
                         <div className="profile-image">
                             <div className="profile-stack">
