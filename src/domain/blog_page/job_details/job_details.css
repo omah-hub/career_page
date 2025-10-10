@@ -106,16 +106,21 @@ letter-spacing: 0.36px;
     align-items: center;
     border-radius: 12px;
     margin-right: 170px;
+    display: flex;
+    align-items: center;
+    
 }
 .apply-button h3 {
     color: var(--Bg-White, #FFF);
-    text-align: center;
+      margin: 0;
     font-family: "Nunito Sans";
     font-size: 12px;
     font-style: normal;
     font-weight: 700;
     line-height: 16px; 
     letter-spacing: 0.14px;
+     
+    
     }
 
 .job-detail-content {
