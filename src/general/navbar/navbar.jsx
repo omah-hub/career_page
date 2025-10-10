@@ -18,29 +18,35 @@ class Navbar extends React.Component {
     }));
   };
 
+  handleMenuItemClick = () => {
+    if (this.state.isMobileMenuOpen) {
+      this.toggleMobileMenu();
+    }
+  }
+
   render() {
     const { isMobileMenuOpen } = this.state;
     return (
       <header className="header">
         <div className="container">
           <div className="nav-brand">
-            <img src={logo} alt="Company Logo" style={{ height: '40px' }} />
+            <img src={logo} alt="Company Logo" />
           </div>
 
           <nav className={`nav ${isMobileMenuOpen ? "nav-open" : ""}`}>
             <ul className="nav-list">
               <li className="nav-item">
-                <Link to="/" className="nav-link">
+                <Link to="/" className="nav-link" onClick={this.handleMenuItemClick}>
                   Blog
                 </Link>
               </li>
               <li className="nav-item">
-                <Link to="/merchant" className="nav-link">
+                <Link to="/merchant" className="nav-link" onClick={this.handleMenuItemClick}>
                   Merchant
                 </Link>
               </li>
               <li className="nav-item">
-                <Link to="/developer" className="nav-link">
+                <Link to="/developer" className="nav-link" onClick={this.handleMenuItemClick}>
                   Developers
                 </Link>
               </li>
@@ -50,12 +56,12 @@ class Navbar extends React.Component {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link to="/careers" className="nav-link">
+                <Link to="/careers" className="nav-link" onClick={this.handleMenuItemClick}>
                   FAQ
                 </Link>
               </li>
               <li className="nav-item">
-                <Link to="/careers" className="nav-link">
+                <Link to="/careers" className="nav-link" onClick={this.handleMenuItemClick}>
                   Contact Us
                 </Link>
               </li>

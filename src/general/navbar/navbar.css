@@ -1,90 +1,142 @@
-.header {
-    background-color: #1a1a1a;
-    color: white;
-    padding: 0 20px;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 2px 10px rgba(0, 0, 0.1);
-}
-.header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
 }
 
-.nav-brand h2 {
-    font-size: 1.0rem;
-    font-weight: 700;
-    color: white
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background: transparent;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1232px;
+  margin: 0 auto;
+  padding: 0 70px;
+  height: 72px;
+}
+
+.nav-brand img {
+  width: 155px;
+  height: auto;
+}
+
+/* Desktop nav */
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-grow: 1;
 }
 
 .nav-list {
-    display: flex;
-    list-style: none;
-    gap: 2rem
+  display: flex;
+  list-style: none;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-link {
-    color: white;
     text-decoration: none;
-    font-weight: 500;
-    font-size: 1rem;
-    transition: color 0.3s ease;
-    padding: 0.5rem 0;
+    font-family: 'Nunito Sans';
+    color:  #EEEEEC;
+    font-family: "Nunito Sans";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 20px; 
+    letter-spacing: 0.14px;
 }
 
-.nav-link:hover {
-    color: #007bff;
-}
+/* Mobile menu icon */
 .mobile-menu-toggle {
-    display: none;
-    background: none;
-    border: none;
-    color: white;
-    font-size: 1.5rem;
-    cursor: pointer;
-    padding: 0.5rem;
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.8rem;
+  cursor: pointer;
+  z-index: 2000;
+  position: relative;
 }
 
+/* Mobile view */
+@media (max-width: 950px) {
+  /* .nav-brand {
+    display: block;
+  } */
+  .mobile-menu-toggle {
+    display: block;
+    position: absolute;
+    /* position: fixed;  */
+    top: 20px;
+    right: 25px;
+    z-index: 3000; 
+  }
 
-
-@media(max-width: 768px) {
-    .mobile-menu-toggle {
-        display: block;
-    }
     .nav {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background-color: #1a1a1a;
-        transform: translateY(-100%);
-        opacity: 0;
-        visibility: hidden;
-        transition: all 0.3s ease;
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    }
-    .nav-open {
-        transform: translateY(0);
-        opacity: 1;
-        visibility: visible;
-    }
-    .nav-list {
-        flex-direction: column;
-        gap: 0;
-        padding: 1rem 0;
-    }
-    .nav-item {
-        border-bottom: 1px solid #333;
-    }
-    .nav-item:last-child {
-        border-bottom: none;
-    }
-    .nav-link {
-        display: block;
-        padding: 1rem 20px;
-        font: 1.1rem sans-serif;
-    }
-    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #EA973E;
+    z-index: 2500;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;  
+    justify-content: flex-start; 
+    transform: translateY(-100%);
+    opacity: 0;
+    visibility: hidden;
+    transition: transform 0.4s ease, opacity 0.3s ease;
+    padding: 80px 30px; 
+  }
+
+
+  .nav.nav-open {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .nav-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+  justify-content: flex-start;
+  gap: 2rem;
+  margin-top: 50px;
+  padding-left: 0;
+  width: 100%;
+}
+
+.nav-item {
+  width: 100%;
+}
+
+.nav-link {
+    display: block;
+    width: 100%; 
+    text-align: left; 
+    padding: 0.5rem 0;
+    color: #fff;
+    color: var(--Bg-White, #FFF);
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; 
+    letter-spacing: 0.16px;
+}
+
 }

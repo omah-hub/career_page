@@ -1,5 +1,6 @@
 import MainLayout from "../layout/main_layout";
-import Blog from "../domain/hero_page/blog";
+import BlogComp from "../domain/blog_page/blog_comp/blog_comp";
+import JobDetails from "../domain/blog_page/job_details/job_details";
 
 
 const routes = [
@@ -9,12 +10,12 @@ const routes = [
     children: [
       {
         index: true,   // 👈 this makes Blog the default
-        element: <Blog />,
+        element: <BlogComp />,
       },
-      // {
-      //   path: "merchant",
-      //   element: <Merchant />,
-      // },
+      {
+        path: "job-details",
+        element: <JobDetails />,
+      },
       // {
       //   path: "developer",
       //   element: <Developer />,

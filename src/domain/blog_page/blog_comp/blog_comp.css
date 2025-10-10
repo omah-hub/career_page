@@ -1,0 +1,99 @@
+/* body{
+    overflow-x: hidden;
+}
+.bg-cover {
+    position: relative;
+   
+    overflow-y: hidden;
+    height: 605.796px;
+    flex-shrink: 0;
+    aspect-ratio: 1437.00/647.80;
+   
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+}
+
+
+.bg-blur {
+  position: absolute;
+  width: 100%;
+  height: 645px;
+ background: linear-gradient(180deg, rgba(51, 51, 51, 0.00) -9.46%, rgba(6, 20, 7, 0.65) 52.23%), url("../../../assets/images/group-image.jpg") lightgray 0px -110px / 100% 147.904% no-repeat;
+filter: blur(1.939508080482483px);
+  background-size: cover; 
+  filter: blur(1.94px);
+  z-index: 1;
+  
+}
+
+
+
+.bg-content {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+}
+
+.hero-height {
+    min-height: 75vh;
+} */
+
+body {
+  overflow-x: hidden;
+}
+
+.hero-wrapper {
+  position: relative;
+  height: 100vh;
+  /* overflow: hidden; */
+}
+
+/* Background image centered and responsive */
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background: url("../../../assets/images/group-image.jpg") center center / cover no-repeat;
+  z-index: 0;
+  transition: background-position 0.3s ease;
+  filter: blur(1.7px);
+}
+
+/* background: linear-gradient(180deg, rgba(51, 51, 51, 0.00) -9.46%, rgba(6, 20, 7, 0.65) 52.23%), url(<path-to-image>) lightgray 0px -110px / 100% 147.904% no-repeat;
+filter: blur(1.939508080482483px); */
+/* Dark gradient overlay with light blur */
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+      180deg,
+       rgba(104, 101, 101, 0) -9.46%,
+      rgba(6, 19, 10, 0.65) 52.23%
+    );
+ 
+
+  z-index: 1;
+}
+
+/* Main hero content */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Hero height tweak for large screens */
+@media (min-width: 1024px) {
+  .hero-wrapper {
+    height: 605px;
+  }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .hero-bg {
+    background-position: center center;
+    background-size: cover;
+  }
+}

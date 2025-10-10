@@ -1,0 +1,102 @@
+.footer-container {
+    display: flex;
+    background-color: #FCFBFA;
+    /* justify-content: space-around; */
+    gap: 80px;
+    padding:  60px 100px;
+    margin-bottom: 160px;
+    justify-items: center;
+    /* align-items: center; */
+}
+.footer-container .logo {
+    width: 223.882px;
+    height: 61px;
+}
+.footer-container .footer-information {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* spreads them out neatly */
+    align-items: flex-start;
+    gap: 50px; 
+    
+    width: 100%;
+}
+
+.footer-container .footer-information > div {
+    flex: 0 0 auto; 
+}
+.footer-container .footer-information > div:last-child {
+  max-width: 200px; /* or whatever fits nicely */
+  white-space: normal;
+  word-wrap: break-word;
+}
+
+div > h3 {
+    color: var(--Type-Pry-text, #302C29);
+font-family: "Nunito Sans";
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: 28px;
+margin-bottom: 15px;
+margin-top: 0;
+padding-top: 0;
+}
+div > p {
+    color: var(--Type-Sec-text, #7D756C);
+font-family: "Nunito Sans";
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 26px; /* 175% */
+margin-bottom: 10px;
+}
+.small-device {
+    display: none;
+}
+.footer-logo-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.logos {
+    display: flex;
+    gap: 10px;
+}
+@media (max-width: 1440px) {
+    .footer-container .footer-information {
+        gap:20px
+    }
+    .footer-container .footer-information > div:last-child {
+        max-width: 100px; 
+        white-space: normal;
+        word-wrap: break-word;
+    }
+    .footer-container .footer-information > div >p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 950px) {
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+
+    }
+    .footer-container .footer-information {
+        display: none;
+    }
+.small-device {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+}
+
+    .small-device div:first-child {
+        justify-content: flex-start;
+    }
+    .small-device div:last-child {
+        justify-content: flex-end;
+    }
+}

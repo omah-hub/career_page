@@ -1,0 +1,37 @@
+.open-roles-section {
+    background: var(--Pry-shade-03, #28360E);
+    padding-bottom: 80px;
+    height: 800px;
+    padding-top: 20px 30px 0;
+    /* overflow-y: scroll; */
+}
+.open-roles-header {
+    align-items: center;
+    text-align: center;
+    padding-top: 20px;
+    color: var(--Bg-White, #FFF);
+    font-family: "Nunito Sans";
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+}
+.open-roles-header h2 {
+    font-size: 22px;
+}
+.open-roles-header p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #FFF;
+}
+
+.job-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-top: 20px;
+  max-height: 500px;   /* adjust this based on your design */
+  overflow-y: auto;
+  scrollbar-width: none;   /* Firefox */
+  -ms-overflow-style: none; 
+}

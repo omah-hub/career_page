@@ -1,0 +1,229 @@
+.profile-section {
+    background-color: #FCFBFA;
+}
+.profile-container {
+    align-items: center;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+   
+}
+.profile-container h2 {
+    color: var(--Type-Pry-text, #302C29);
+    text-align: center;
+    font-family: "Nunito Sans";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px; 
+}
+.profile-container .subheading {
+    color: var(--Type-Pry-text, #302C29);
+    text-align: center;
+    font-family: "Nunito Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; 
+    letter-spacing: 0.14px;
+    padding-top: 10px;
+    padding-bottom: 8px;
+}
+.profile-content {
+    display: flex;
+    gap: 1rem;
+    margin: 0 auto;
+    background:#fdfdfd;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(218, 213, 213, 0.6);
+    width: 648px;
+    height: 220px;
+   
+}
+
+
+.profile-stack {
+    position: relative;
+    width: 160px;
+    height: 160px;
+    box-sizing: border-box;
+}
+
+.profile-stack div {
+    border-right: 0;
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 180px;
+    height: 220px;
+    border-radius: 20px;
+    /* box-shadow: 0 2px 6px rgba(0,0,0,0.6); */
+    
+}
+.stack-layer-3 {
+    background: var(--Pry-Tint-04, #ECF2CF);
+    z-index: 1;
+    transform: translateX(-30px);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+.stack-layer-2 {
+ background: var(--Pry-Tint-04, #ECF2CF);  
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);  
+  z-index: 2;
+  transform: translateX(-15px);
+}
+
+/* front layer: contains the image centered */
+.stack-layer-1 {
+  background: var(--Pry-Tint-04, #ECF2CF);  
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);    
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.stack-layer-1 img {
+  width: 110px;   /* image size inside the square */
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  border: 4px solid rgba(255,255,255,0.9); 
+  z-index: 5;
+  box-shadow: 0 4px 10px  rgba(0,0,0,0.08);
+}
+
+.quote {
+    padding-top: 20px;
+    padding-left: 40px;
+    text-align: left;
+    width: 435px;
+    flex-shrink: 0;
+    align-self: stretch;
+    max-height: 220px;
+    
+}
+
+
+.quote p {
+    color: var(--Type-Pry-text, #302C29);
+    font-family: "Nunito Sans";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; 
+    letter-spacing: 0.17px;
+
+}
+.profile-image h4 {
+margin-bottom: -3px;
+color: var(--Type-Pry-text, #302C29);
+/* Subheading */
+font-family: "Nunito Sans";
+font-size: 17px;
+font-style: normal;
+font-weight: 700;
+line-height: 20px; /* 117.647% */
+letter-spacing: 0.17px;
+}
+
+.profile-image span {
+   color: var(--Type-Pry-text, #302C29);
+
+/* Caption 01 */
+font-family: "Nunito Sans";
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 16px; /* 133.333% */
+letter-spacing: 0.24px;
+}
+
+.navigation-arrows {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+.arrow-left {
+    background: var(--Pry-Tint-04, #ECF2CF);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding: 3px;
+    color: var(--Pry-Pry-base, #8CA32B);
+}
+.arrow-right {
+    background: var(--Pry-Tint-04, #ECF2CF);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    color: var(--Pry-Pry-base, #8CA32B);
+}
+@media (max-width: 950px) {
+    .profile-section{
+        padding-left: 60px;
+        padding-right: 30px;
+    }
+  .profile-content {
+    width: 100%;
+    max-width: 950px;
+    margin: 0 auto;
+    justify-content: center;
+    /* overflow-x: hidden; */
+  }
+
+  .quote {
+    width: auto;        /* remove the fixed 435px width */
+    flex: 1;            /* allow it to grow/shrink with flex */
+    flex-shrink: 1;     /* let it shrink */
+    padding-left: 15px; /* smaller padding for small screens */
+    padding-right: 0;
+    max-width: 100%;
+  }
+
+  .quote p {
+    width: 100%;        /* now truly flexible */
+    max-width: 100%;
+    margin: 0;
+    font-size: 13px;
+    overflow-wrap: break-word;
+  }
+}
+
+/* @media (max-width: 950px) {
+    .profile-section{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+   .profile-content {
+    max-width: 950px;
+    width: 100%;
+    
+   }
+  .quote {
+    
+ 
+     max-width: 950px;
+     width: 100%;
+    height: 220px;       
+    overflow-y: auto;    
+}
+.quote p {
+    max-width: 400px;
+    width: 100%;
+    font-size: 12px;
+    
+}
+
+} */
+@media (max-width:700px) {
+    .quote p {
+        font-size: 10px;
+    }
+}

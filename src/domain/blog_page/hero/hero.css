@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Sevillana&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito Sans';
+}
+
+.container {   
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+.hero {
+  min-height: 505px;          
+  display: flex;              
+  align-items: center;        
+  justify-content: center;    
+        
+}
+
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    max-width: 606px;
+    gap: 3.5px;
+    margin: 0 auto;
+    text-wrap: nowrap;
+}
+.hero-title {
+    margin-bottom: 0;
+    font-style: normal;
+    flex-wrap: wrap;
+    color: var(--Bg-White, #FFF);
+    font-size: 36px;
+    font-style: normal;
+    font-weight:600;
+    line-height: 58px; 
+    text-align: center;
+    margin-bottom: -5px;
+}
+
+.hero-subtitle {
+    color: var(--Bg-White, #FFF);
+    max-width: 396px;
+    width: 100%;           
+    margin: 0 auto; 
+    text-align: center;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; 
+    padding-bottom: 2px;
+    
+    
+}
+
+.cta-button {
+    border-radius: 12px;
+    background: var(--Pry-Pry-base, #8CA32B);
+    color: white;
+    border: none;
+    padding: 0 28px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    height: 52px;
+    letter-spacing: 0.14px;
+     width: 241px;
+}
+
+
+
+@media(max-width: 768px) {
+    .mobile-menu-toggle {
+        display: block;
+    }
+    
+    .hero {
+        padding: 4REM 0;
+        min-height: 70vh;
+    }
+    .hero-title {
+        font-size: 2.5rem;
+       
+    }
+    .hero-subtitle {
+        font-size: 1.1rem;
+        margin-bottom: 2rem;
+    }
+    .cta-button {
+        padding: 0.875rem 1.75rem;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 590px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    .hero-title {
+        font-size:  1.5rem;
+    }
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    .hero {
+        padding: 3rem 0;
+    }
+}
+
+@media (max-width: 360px) {
+   
+    
+    .hero-title {
+        font-size:  1rem;
+    }
+    .hero-subtitle {
+        font-size: 0.6rem;
+    }
+   
+}
+
+
+
